@@ -1,0 +1,8 @@
+ejecuta este comando:
+http://apidocjs.com/#getting-started
+
+apidoc -i apirest/ -o documentacion/documento/ -t documentacion/template/
+
+
+//apidoc -i ElDirectorioDeLaApi/ -o documentacion/documento/ -t documentacion/template/
+ 

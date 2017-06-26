@@ -1,0 +1,24 @@
+{
+  "name": "Ejemplo API REST CD 2017",
+  "version": "0.1.0",
+  "description": "Api de ejemplo",
+  "title": "API REST CD",
+  "url" : "http://localhost:8080/EjemploAjax+APIREST/backEnd/apirest",
+  "header": {
+    "title": "Presentación de la API",
+    "filename": "documentacion/cabecera.html"
+  },
+  "footer": {
+    "title": "Epilogo",
+    "filename": "documentacion/AlPie.html"
+  },
+  "order": [
+  "cd",
+    "GetCD",
+    "PostCD"
+  ],
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}
