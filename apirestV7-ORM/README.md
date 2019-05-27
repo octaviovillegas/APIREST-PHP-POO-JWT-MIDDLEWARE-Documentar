@@ -32,7 +32,7 @@ Si desea mencionar el nombre de la tabla manualmente, puede hacerlo con la propi
 
 ```PHP
 
- protected $table = 'my_albums';
+ protected $table = 'mi_cds';
 
 
 ```
