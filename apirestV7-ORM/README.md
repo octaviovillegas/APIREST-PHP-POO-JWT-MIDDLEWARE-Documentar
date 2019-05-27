@@ -14,10 +14,10 @@ composer require illuminate/database
 Se puede usar un Object Relational Mapper (ORM) para conectar la aplicación SlimPHP. Esto significa que cada una de las tablas de base de datos del servidor es un objeto. Por lo tanto, debe escribir una nueva clase para una tabla específica . 
 
 Después de eso, cree una nueva instancia de la clase, ahora puede:
-   crear
-   recuperar
-   actualizar 
-   eliminar el registro de la tabla
+   - crear
+   - recuperar
+   - actualizar 
+   - eliminar el registro de la tabla
 
  por lo que no necesitas escribir ninguna consulta de SQL. Los beneficios de usar ORM en su proyecto  es no necesitar  escribir consultas de SQL complejas y le permiten escribir una sintaxis simple para controlar la base de datos. 
 
