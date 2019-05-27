@@ -5,7 +5,7 @@
  "Illuminate Database component" es un conjunto de herramientas de base de datos completo para PHP, que proporciona un generador de consultas expresivo, un ORM de estilo ActiveRecord y un generador de esquemas. Actualmente es compatible con MySQL, Postgres, SQL Server y SQLite. También sirve como la capa de base de datos del marco PHP Laravel.
 
 
-```PHP
+```console
 
 composer require illuminate/database
 
@@ -14,12 +14,12 @@ composer require illuminate/database
 Se puede usar un Object Relational Mapper (ORM) para conectar la aplicación SlimPHP. Esto significa que cada una de las tablas de base de datos del servidor es un objeto. Por lo tanto, debe escribir una nueva clase para una tabla específica . 
 
 Después de eso, cree una nueva instancia de la clase, ahora puede:
-# crear
-# recuperar
-# actualizar 
-# eliminar el registro de la tabla
+   crear
+   recuperar
+   actualizar 
+   eliminar el registro de la tabla
 
- por lo que no necesita escribir ninguna consulta de SQL. Los beneficios de usar ORM en su proyecto  es no necesitar  escribir consultas de SQL complejas y le permiten escribir una sintaxis simple para controlar la base de datos. 
+ por lo que no necesitas escribir ninguna consulta de SQL. Los beneficios de usar ORM en su proyecto  es no necesitar  escribir consultas de SQL complejas y le permiten escribir una sintaxis simple para controlar la base de datos. 
 
 
 
@@ -28,10 +28,7 @@ Ahora, veamos un ejemplo de modelo de "cd", que usaremos para recuperar y almace
 
 Por convención, el "snake_case", nombre plural de la clase se utilizará como nombre de la tabla a menos que se especifique explícitamente otro nombre. Por lo tanto, en este caso, Eloquent asumirá que el modelo de "cd" almacena registros en la tabla de "cds".
 
-Si desea mencionar el nombre de la tabla manualmente, puede hacerlo con la propiedad 
-
-
-$table en la clase modelo.
+Si desea mencionar el nombre de la tabla manualmente, puede hacerlo con la propiedad $table en la clase modelo.
 
 ```PHP
 
@@ -72,6 +69,7 @@ class cd extends \Illuminate\Database\Eloquent\Model {
   
 }
 
+?>
 
 ```
 
@@ -177,11 +175,7 @@ $app->group('/orm', function () {
 
     $respuesta->delete();
     echo $respuesta->toJson();
-  });
-
- 
- 
-     
+  });     
 });
 
 
