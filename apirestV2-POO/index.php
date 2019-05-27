@@ -2,9 +2,9 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-require '../composer/vendor/autoload.php';
-require '/clases/AccesoDatos.php';
-require '/clases/cdApi.php';
+require_once '../vendor/autoload.php';
+require_once './clases/AccesoDatos.php';
+require_once './clases/cdApi.php';
 
 
 $config['displayErrorDetails'] = true;

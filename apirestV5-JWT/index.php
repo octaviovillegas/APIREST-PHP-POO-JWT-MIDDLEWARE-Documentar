@@ -3,10 +3,10 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
 
-require '../composer/vendor/autoload.php';
-require_once '/clases/AccesoDatos.php';
+require '../vendor/autoload.php';
+require_once './clases/AccesoDatos.php';
 require_once '/clases/cd.php';
-require_once '/clases/AutentificadorJWT.php';
+require_once './clases/AutentificadorJWT.php';
 
 
 $config['displayErrorDetails'] = true;

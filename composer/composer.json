@@ -1,7 +1,0 @@
-{
-    "require": {
-        "slim/slim": "^3.0",
-        "firebase/php-jwt": "^4.0",
-        "oscarotero/psr7-middlewares": "^3.20"
-    }
-}

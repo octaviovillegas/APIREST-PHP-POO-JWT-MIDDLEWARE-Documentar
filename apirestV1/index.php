@@ -2,8 +2,8 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-require_once '../composer/vendor/autoload.php';
-require_once '/clases/AccesoDatos.php';
+require_once '../vendor/autoload.php';
+require_once './clases/AccesoDatos.php';
 require_once '/clases/cd.php';
 
 $config['displayErrorDetails'] = true;
