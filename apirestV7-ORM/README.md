@@ -26,8 +26,37 @@ $config['db']= [
         ];
 
 ```
+** Crear la clase  de la entidad Eloquent ORM**
+
+
+```PHP
+
+<?php  
+namespace App\Models;
+ 
+class cd extends \Illuminate\Database\Eloquent\Model {  
+  
+}
+
+
+```
+
+** referenciar la clase y usar un alias para el namespace de la entidad Eloquent ORM**
+
+
+```PHP
+
+use \App\Models\cd as cdorm;
+
+require_once './app/models/cd.php';
+
+```
+
+
+
 
 ** configurar Eloquent ORM**
+
 In your dependencies.php or wherever you add your Service Factories:
 
 ```PHP
