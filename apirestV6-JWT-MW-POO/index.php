@@ -8,8 +8,8 @@ require_once './clases/AccesoDatos.php';
 require_once './clases/cdApi.php';
 require_once './clases/AutentificadorJWT.php';
 require_once './clases/MWparaCORS.php';
-require_once '/clases/MWparaAutentificar.php';
-
+require_once './clases/MWparaAutentificar.php';
+require_once './clases/login.php';
 $config['displayErrorDetails'] = true;
 $config['addContentLengthHeader'] = false;
 
@@ -27,7 +27,11 @@ desarrollo para obtener información sobre los errores
 
 $app = new \Slim\App(["settings" => $config]);
 
-
+$app->group('/login', function () {
+ 
+  $this->post('/', \login::class . ':hacerLogin');
+    
+});
 
 /*LLAMADA A METODOS DE INSTANCIA DE UNA CLASE*/
 $app->group('/cd', function () {

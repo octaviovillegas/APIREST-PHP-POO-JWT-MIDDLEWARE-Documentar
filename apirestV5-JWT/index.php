@@ -5,7 +5,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 
 require '../vendor/autoload.php';
 require_once './clases/AccesoDatos.php';
-require_once '/clases/cd.php';
+require_once './clases/cd.php';
 require_once './clases/AutentificadorJWT.php';
 
 
@@ -57,7 +57,7 @@ $app = new \Slim\App(["settings" => $config]);
   });
 
   $app->get('/verificarTokenNuevo/', function (Request $request, Response $response) { 
-      $datos = array('usuario' => 'rogelio@agua.com','perfil' => 'Administrador', 'alias' => "PinkBoy");
+      $datos = array('usuario' => 'rogelio@agua.com','perfil' => 'lalalal', 'alias' => "PinkBoy");
       $token= AutentificadorJWT::CrearToken($datos); 
       $esValido=false;
       try 
@@ -109,6 +109,7 @@ $app = new \Slim\App(["settings" => $config]);
       } catch (Exception $e) {      
         //guardar en un log
         echo $e;
+         echo "nop";
       }
       if( $esValido)
       {
